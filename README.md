@@ -24,7 +24,7 @@ As far as I can tell, there is currently no way to edit which level has access t
 
 Other Files
 ----------------------------
-**censored_words.txt**
+**cebsnar.txt**
 
 As far as I can tell, this is being used by the server, so make sure to place it back into the dir it came from **(\data\texts\English)**
 
