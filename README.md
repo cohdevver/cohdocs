@@ -18,7 +18,9 @@ This contains a text file of GM Server-sided commands and their required access 
 
 Could help if you need GMs (or higher-level GMs) but not Admins.
 
-As far as I can tell, there is currently no way to edit which level has access to which commands(to make your own GMs, for instance).
+~~As far as I can tell, there is currently no way to edit which level has access to which commands(to make your own GMs, for instance).~~
+
+In the I24 Binaries there is c file called cmdgame.c, you should theorhetically be able to edit access levels or add new commands to the game in I24.
 
 
 
