@@ -1,0 +1,156 @@
+statement	
+exec sp_executesql 
+N'UPDATE dbo.Ents 
+SET PosX=@P1,PosY=@P2,PosZ=@P3,OrientY=@P4,TotalTime=@P5,LastActive=@P6,Endurance=@P7 
+WHERE ContainerId=@P8;
+UPDATE dbo.Ents2 SET ExperienceRest=@P9,LastDayJobsStart=@P10 
+WHERE ContainerId=@P11 AND SubId=@P12;
+UPDATE dbo.RewardTokens 
+SET RewardValue=@P13,RewardTime=@P14 
+WHERE ContainerId=@P15 AND SubId=@P16;
+UPDATE dbo.MARTYTracks 
+SET MARTYCurrentMinute=@P17,MARTYRingBufferLoc=@P18 
+WHERE ContainerId=@P19 AND SubId=@P20;
+UPDATE dbo.MARTYTracks 
+SET MARTYCurrentMinute=@P21,MARTYRingBufferLoc=@P22 
+WHERE ContainerId=@P23 AND SubId=@P24;
+UPDATE dbo.Powers 
+SET NumCharges=@P25,RechargedAt=@P26 
+WHERE ContainerId=@P27 AND SubId=@P28;
+UPDATE dbo.Powers 
+SET AvailableTime=@P29 
+WHERE ContainerId=@P30 AND SubId=@P31;
+UPDATE dbo.Powers 
+SET AvailableTime=@P32 
+WHERE ContainerId=@P33 AND SubId=@P34;
+UPDATE dbo.Powers 
+SET AvailableTime=@P35
+ WHERE ContainerId=@P36 AND SubId=@P37;
+UPDATE dbo.Powers 
+SET AvailableTime=@P38 
+WHERE ContainerId=@P39 AND SubId=@P40;
+UPDATE dbo.Powers 
+SET AvailableTime=@P41 
+WHERE ContainerId=@P42 AND SubId=@P43;
+UPDATE dbo.Powers 
+SET AvailableTime=@P44 
+WHERE ContainerId=@P45 AND SubId=@P46;
+UPDATE dbo.Powers 
+SET AvailableTime=@P47
+ WHERE ContainerId=@P48 AND SubId=@P49;
+UPDATE dbo.AttribMods 
+SET Timer=@P50 
+WHERE ContainerId=@P51 AND SubId=@P52;
+UPDATE dbo.Badges01 
+SET c1732=@P53,c1787=@P54
+ WHERE ContainerId=@P55 AND SubId=@P56;',
+N'@P1 real,
+@P2 real,
+@P3 real,
+@P4 real,
+@P5 int,
+@P6 varchar(max),
+@P7 real,
+@P8 int,
+@P9 int,
+@P10 varchar(max),
+@P11 int,
+@P12 int,
+@P13 int,
+@P14 int,
+@P15 int,
+@P16 int,
+@P17 int,
+@P18 int,
+@P19 int,
+@P20 int,
+@P21 int,
+@P22 int,
+@P23 int,
+@P24 int,
+@P25 int,
+@P26 int,
+@P27 int,
+@P28 int,
+@P29 real,
+@P30 int,
+@P31 int,
+@P32 real,
+@P33 int,
+@P34 int,
+@P35 real,
+@P36 int,
+@P37 int,
+@P38 real,
+@P39 int,
+@P40 int,
+@P41 real,
+@P42 int,
+@P43 int,
+@P44 real,
+@P45 int,
+@P46 int,
+@P47 real,
+@P48 int,
+@P49 int,
+@P50 real,
+@P51 int,
+@P52 int,
+@P53 int,
+@P54 int,
+@P55 int,
+@P56 int',
+-2107.030517578125,
+-0.5003659725189209,
+-3109.59423828125,
+3.0096700191497803,
+8680,
+'2019-04-27 00:11:09',
+200,
+2,
+59,
+'2019-04-27 00:11:09',
+2,
+0,
+8680,609653469,
+2,
+0,
+10160891,
+31,
+2,
+0,
+10160891,
+31,
+2,
+1,
+4,
+609654059,
+2,
+18,
+6883.63232421875,
+2,
+23,
+6883.63232421875,
+2,
+24,6883.63232421875,
+2,
+25,
+6883.63232421875,
+2,
+26,
+6883.63232421875,
+2,
+27,
+6883.63232421875,
+2,
+28,
+6883.63232421875,
+2,
+29,
+-13.695992469787598,
+2,
+0,
+8680,
+57,
+2,
+0
