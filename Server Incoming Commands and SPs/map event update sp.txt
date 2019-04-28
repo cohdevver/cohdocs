@@ -1,0 +1,25 @@
+statement	
+exec sp_executesql 
+N'INSERT INTO dbo.MapDataTokens (ContainerId,SubId) 
+VALUES (@P1,@P2);
+UPDATE dbo.MapGroups 
+SET Active=@P3
+ WHERE ContainerId=@P4;
+UPDATE dbo.MapDataTokens 
+SET Name=@P5,Value=@P6 
+WHERE ContainerId=@P7 AND SubId=@P8;',N'
+@P1 int,
+@P2 int,
+@P3 int,
+@P4 int,
+@P5 nvarchar(max),
+@P6 int,
+@P7 int,
+@P8 int'
+,2
+,0
+,272
+,2
+,N'RiktiOneTimeInvasionToken',1
+,2
+,0
