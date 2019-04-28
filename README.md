@@ -1,6 +1,14 @@
 # cohdocs
 Repo for CoH i25/24 Docs
 ------------------------------
+## PDiags
+
++ This folder will hold reference PDFs that detail what each P# refers to. 
++ P#s are NPC dialogues that are called and referenced throught the server-side bins.
++ _This is currently a WIP_ so not all dialogues are available.
++ Ideally I will combine all of them into one searchable document at the end.
++ **quickchat** breakdown is also found here.
++ There is a detailed guide on how to create new popmenus or edit the existing quickchat menu already in-game.
 
 PDFS
 ------------------------------
