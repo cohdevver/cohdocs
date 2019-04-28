@@ -1,6 +1,13 @@
 # cohdocs
 Repo for CoH i25/24 Docs
 ------------------------------
+## Server Incoming Commands and SPs
+
++ This folder contains SPs that are run at certain triggers
++ The ents update sp happens at regular intervals and this is what saves the last state of the character.
++ The map event update sp is triggered on an event starting on a particular map.
++ In both files, the variable values are set at the end, and in these files they are listed in order, starting from @P1's value.
+
 ## PDiags
 
 + This folder will hold reference PDFs that detail what each P# refers to. 
